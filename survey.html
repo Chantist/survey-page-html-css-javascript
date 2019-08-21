@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function getSuccessMessage() {
+            var name = document.getElementById("name").value;
+            alert("Thank you " + name + " for taking the time to complete this survey!");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+
+    <form action="#" id="survey-form">
+        <div id="survey-form-content">
+            <p id="description">Let us know a bit about your experience as a coder.</p>
+            <section>
+                <div class="general-info">
+                    <label id="name-label" for="name">Full Name: </label>
+                    <input type="text" id="name" placeholder="Enter Name" required />
+                </div>
+
+                <div class="general-info">
+                    <label id="email-label" for="email">Email: </label>
+                    <input type="email" id="email" placeholder="Enter Email" required />
+                </div>
+
+                <div class="general-info">
+                    <label id="number-label" for="number">Mobile Number: </label>
+                    <input type="number" id="number" min="10" max="10" placeholder="Enter Mobile Number" required />
+                </div>
+            </section>
+
+            <section id="drop-box-selection" class="min-layout">
+                <label>How is your coding experience?</label>
+                <select id="dropdown">
+                    <option value="newbie">Newbie Coder</option>
+                    <option value="mid">Mid-Level Developer</option>
+                    <option value="expert">Black Belt Programmer</option>
+                </select>
+            </section>
+
+            <section class="min-layout">
+                <fieldset>
+                    <legend>What is your favorite coding flovor</legend>
+                    <div>
+                        <input id="frontend" type="radio" name="stack" value="Front-End Development">
+                        <label id="frontend-label" for="frontend">Front-End Development</label>
+
+                    </div>
+                    <div>
+                        <input id="backend" type="radio" name="stack" value="Back-End Development">
+                        <label id="backend-label" for="backend">Back-End Development</label>
+
+                    </div>
+                    <div>
+                        <input id="fullstack" type="radio" name="stack" value="Full-Stack Development">
+                        <label id="fullstack-label" for="fullstack">Full-Stack Development</label>
+
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="min-layout">
+                <fieldset>
+                    <legend>What do you find to be the most complex programming topics ? </legend>
+
+                    <div>
+                        <input id="tdd" type="checkbox" value="Test Driven Design">
+                        <label id="tdd-label">Test Driven Design</label>
+                    </div>
+
+                    <div>
+                        <input id="algo-data" type="checkbox" value="Algorithm and Data Structures">
+                        <label id="algo-data-label">Algorithm and Data Structures</label>
+                    </div>
+
+                    <div>
+                        <input id="design-pattern" type="checkbox" value="Design Patterns">
+                        <label id="design-pattern-label">Design Patterns</label>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="text-area">
+                <p>Briefly describe how you were introduce to the world of software development:</p>
+                <textarea></textarea>
+            </section>
+        </div>
+        <button id="submit" onclick="getSuccessMessage()">Submit</button>
+    </form>
+
+</body>
+
+</html>

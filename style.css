@@ -1,0 +1,86 @@
+body {
+    margin-top: 0;
+    background-color: hsl(161, 42%, 60%);
+    font-family: Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+#survey-form {
+    border-radius: 3px;
+    padding: 10px 0px;
+    background-color: white;
+    width: 62%;
+    margin: 0 auto;
+}
+
+#survey-form-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+}
+
+#survey-form section {
+    margin: 0 auto;
+}
+
+.general-info {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: hsl(161, 42%, 60%);
+}
+
+#drop-box-selection {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.general-info label {
+    text-align: right;
+    justify-content: center;
+}
+
+#description {
+    margin-bottom: -1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+fieldset {
+    padding: 15px;
+    border: .5px solid gray;
+}
+
+input {
+    padding: 5px;
+}
+
+#text-area,
+.min-layout {
+    width: 75%;
+}
+
+.min-layout div {
+    margin: 10px;
+}
+
+textarea {
+    width: 100%;
+}
